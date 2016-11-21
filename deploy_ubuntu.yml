@@ -1,0 +1,16 @@
+---
+- name: Build Ubuntu 16 Server
+  hosts: localhost
+  gather_facts: False
+  connection: local
+  tasks:
+    - name: Deploy new Ubuntu 16 VM to Default Group in default datacenter
+      clc_server:
+        name: test
+        template: ubuntu-16-64
+        location: UC1
+        count: 1
+        group: 'Default Group'
+      register: clc
+    - name: debug
+      debug: var=clc.server_ids
