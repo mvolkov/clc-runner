@@ -10,7 +10,7 @@
         template: ubuntu-16-64
         location: UC1
         count: 5
-        group: 'Default Group'
+        group: 'Web Farm'
       register: clc
     - name: debug
       debug: var=clc.server_ids
