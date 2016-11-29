@@ -2,4 +2,4 @@
 
 Demonstrate usage of the Runner at CLC.
 
-VM is created at the Default group.
+Crate multiple VMs at specified location and group.
