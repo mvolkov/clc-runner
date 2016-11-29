@@ -9,7 +9,7 @@
         name: test
         template: ubuntu-16-64
         location: UC1
-        count: 5
+        count: 3
         group: 'Web Farm'
       register: clc
     - name: debug
