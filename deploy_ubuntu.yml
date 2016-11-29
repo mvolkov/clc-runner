@@ -19,7 +19,7 @@
   hosts: all
   tasks:
     - name: 1. Install apache2
-      apt: name=apache2 update_cache=yes state=latest
+      apt: name=apache2 state=latest
 
     - name: 2. Install PHP module for Apache
       apt: name=libapache2-mod-php5 state=present
