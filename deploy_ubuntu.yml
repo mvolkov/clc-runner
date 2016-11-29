@@ -14,15 +14,3 @@
       register: clc
     - name: debug
       debug: var=clc.server_ids
-
-#- name: Install Apache
-#  hosts: all
-#  tasks:
-#    - name: 1. Install apache2
-#      apt: name=apache2 state=latest
-#
-#    - name: 2. Install PHP module for Apache
-#      apt: name=libapache2-mod-php5 state=present
-#
-#    - name: 3. Start Apache
-#      service: name=apache2 state=restarted
