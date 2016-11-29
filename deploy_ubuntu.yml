@@ -4,7 +4,7 @@
   gather_facts: False
   connection: local
   tasks:
-    - name: Deploy new Ubuntu 16 VM to Default Group in default datacenter
+    - name: Deploy new Ubuntu 16 VM to Default Group in specified (UC1) datacenter
       clc_server:
         name: test
         template: ubuntu-16-64
@@ -14,3 +14,5 @@
       register: clc
     - name: debug
       debug: var=clc.server_ids
+    - name: install apache2
+      apt: name=apache2 update_cache=yes state=latest
