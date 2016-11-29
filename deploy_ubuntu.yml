@@ -4,7 +4,7 @@
   gather_facts: False
   connection: local
   tasks:
-    - name: Deploy new Ubuntu 16 VM to Default Group in specified (UC1) datacenter
+    - name: Deploy VM - Ubuntu 16.04
       clc_server:
         name: www
         template: ubuntu-16-64
