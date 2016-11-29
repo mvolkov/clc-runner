@@ -6,7 +6,7 @@
   tasks:
     - name: Deploy new Ubuntu 16 VM to Default Group in specified (UC1) datacenter
       clc_server:
-        name: test
+        name: www
         template: ubuntu-16-64
         location: UC1
         count: 3
@@ -14,6 +14,15 @@
       register: clc
     - name: debug
       debug: var=clc.server_ids
-   tasks:
-    - name: install apache2
+
+- name: Install Apache
+  hosts: all
+  tasks:
+    - name: 1. Install apache2
       apt: name=apache2 update_cache=yes state=latest
+
+    - name: 2. Install PHP module for Apache
+      apt: name=libapache2-mod-php5 state=present
+
+    - name: 3. Start Apache
+      service: name=apache2 state=running enable=yes
