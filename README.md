@@ -1,4 +1,4 @@
-# CLC Runner - Deply Ubuntu 16 at CLC
+# CLC Runner - Deploy Ubuntu 16 at CLC
 
 Demonstrate usage of the Runner at CLC.
 
