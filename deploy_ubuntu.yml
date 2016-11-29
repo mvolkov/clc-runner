@@ -25,4 +25,4 @@
       apt: name=libapache2-mod-php5 state=present
 
     - name: 3. Start Apache
-      service: name=apache2 state=running enable=yes
+      service: name=apache2 state=restarted
