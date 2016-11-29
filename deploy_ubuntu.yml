@@ -9,7 +9,7 @@
         name: test
         template: ubuntu-16-64
         location: UC1
-        count: 1
+        count: 5
         group: 'Default Group'
       register: clc
     - name: debug
