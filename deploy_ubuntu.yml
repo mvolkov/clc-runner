@@ -8,7 +8,7 @@
       clc_server:
         name: www
         template: ubuntu-16-64
-        location: VA2
+        location: VA1
         count: 3
         group: 'Default Group'
       register: clc
