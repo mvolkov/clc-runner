@@ -8,9 +8,9 @@
       clc_server:
         name: www
         template: ubuntu-16-64
-        location: IL1
+        location: VA2
         count: 5
-        group: 'Web Farm'
+        group: 'Default Group'
       register: clc
     - name: debug
       debug: var=clc.server_ids
