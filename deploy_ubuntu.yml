@@ -9,7 +9,7 @@
         name: www
         template: ubuntu-16-64
         location: VA2
-        count: 5
+        count: 3
         group: 'Default Group'
       register: clc
     - name: debug
